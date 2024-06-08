@@ -4,21 +4,18 @@
 
 body {
   background: radial-gradient(
-    circle at 24.1% 68.8%,
-    rgb(50, 50, 50) 0%,
-    rgb(0, 0, 0) 99.4%
+    343px at 46.3% 47.5%,
+    rgb(242, 242, 242) 0%,
+    rgb(241, 241, 241) 72.9%
   );
 }
 
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .logo img {
-  position: absolute;
-  padding: 0;
   max-width: 70px;
   margin-top: 15px;
   margin-left: 10px;
@@ -26,34 +23,26 @@ body {
 
 h1 {
   font-size: 96px;
-  color: pink;
+  color: #150d0c;
 }
 
 .navbar {
-  width: 100%;
-  overflow: auto;
-  color: pink;
+  width: auto;
+  color: #150d0c;
 }
 
 .navbar ul {
   list-style: none;
-  margin: 0 0 0 90px;
-  margin-right: 10px;
+  margin: 0;
   padding: 0;
-}
-
-.navbar ul li {
-  float: left;
-  margin-left: 15px;
+  gap: 2rem;
 }
 
 .navbar ul li a {
-  width: 100px;
   display: block;
   padding: 20px 5px;
   text-decoration: none;
-  color: pink;
-  text-align: center;
+  color: #150d0c;
 }
 
 .navbar a:hover {
@@ -97,7 +86,7 @@ header button {
 }
 
 .services h2 {
-  color: white;
+  color: #150d0c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 10px 10px;
@@ -146,7 +135,7 @@ header button {
 }
 
 .products h2 {
-  color: white;
+  color: #150d0c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 10px 10px;
@@ -202,7 +191,7 @@ header button {
 }
 
 .direction h2 {
-  color: white;
+  color: #150d0c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 10px 10px;
@@ -211,7 +200,7 @@ header button {
 }
 
 .testimonial h2 {
-  color: white;
+  color: #150d0c;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 10px 10px;
@@ -227,7 +216,8 @@ header button {
 .slide-wrapper .img-list {
   display: grid;
   gap: 3px;
-  font-size: 0;
+  width: 100%;
+  height: 300px;
   margin-bottom: 30px;
   overflow-x: auto;
   scrollbar-width: none;
@@ -266,7 +256,7 @@ header button {
   position: absolute;
   height: 100%;
   width: 50%;
-  background: white;
+  background: #150d0c;
   border-radius: inherit;
   cursor: grab;
 }
@@ -287,19 +277,64 @@ header button {
 }
 
 .service-section h2 {
-  color: white;
+  color: #150d0c;
   padding-top: 50px;
+}
+
+.services-price h2 {
+  color: #150d0c;
+  background-color: pink;
+  text-align: center;
+  padding: 0 200px;
+  border-radius: 10px 10px;
+  font-style: italic;
 }
 
 .services-price h3,
 h5 {
-  color: white;
+  color: #150d0c;
+}
+
+.grid-2-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 15px 0;
+}
+
+.video-section {
+  flex: 1;
+  max-width: 48%;
+}
+
+.services-price {
+  flex: 1;
+  max-width: 48%;
 }
 
 .service-section button {
   color: white;
   background-color: #db85a7;
   border-radius: 30px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 15px 0;
+}
+
+.video-item {
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-item video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .footer-logo {
@@ -311,13 +346,13 @@ h5 {
 }
 
 footer {
-  padding: 20px;
-  color: white;
+  padding: 30px;
+  color: #150d0c;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 footer a {
-  color: white;
+  color: #150d0c;
 }
 
 .footer-info {

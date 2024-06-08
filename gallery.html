@@ -4,9 +4,173 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Tilt+Prism&family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/44580de181.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../src/styles.css" />
+    <!-- Adjusted path -->
+    <title>Gallery Section - Lahseh Beauty Parlour</title>
   </head>
   <body>
-    <h1>Photos</h1>
+    <div class="logo">
+      <img src="../img/LBP-logo.jpeg" alt="Business logo" />
+    </div>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="/" title="Homepage"> Home </a>
+          </li>
+          <li>
+            <a href="./nav/services.html" title="Services page"> Services </a>
+          </li>
+          <li>
+            <a href="./nav/product.html" title="Product page"> Products</a>
+          </li>
+          <li>
+            <a href="./nav/gallery.html" title="Gallery page"> Gallery </a>
+          </li>
+          <li>
+            <a href="./nav/contact.html" title="Contact page"> Contact us </a>
+          </li>
+        </ul>
+        <div class="cart-section grid gap-3">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </nav>
+      <header>
+        <h2>Lahseh Beauty Palour</h2>
+        <h6>UNLEASH YOUR INNER GLOW</h6>
+        <button>BOOK NOW</button>
+      </header>
+    </div>
+    <div class="video-grid">
+      <div class="video-item">
+        <video width="100%" height="auto" controls>
+          <source src="../videos/Braids-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-item">
+        <video width="100%" height="auto" controls>
+          <source src="../videos/Lashes-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-item">
+        <video width="100%" height="auto" controls>
+          <source src="../videos/Brows-vid.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-item">
+        <video width="100%" height="auto" controls>
+          <source src="../videos/Nails-vid.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-item">
+        <video width="100%" height="auto" controls>
+          <source src="../videos/Piercing-vid.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="video-item">
+        <video width="100%" height="auto" controls>
+          <source src="../videos/Tooth-gems-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <section class="testimonial">
+      <h2>Testimonials</h2>
+      <div class="slideshow">
+        <div class="slide-wrapper">
+          <div class="img-list">
+            <img
+              src="img/Testimonial-1.PNG"
+              alt="Slide 1"
+              class="testimony-img"
+            />
+            <img
+              src="img/Testimonial-2.PNG"
+              alt="Slide 2"
+              class="testimony-img"
+            />
+            <img
+              src="img/Testimonial-3.PNG"
+              alt="Slide 3"
+              class="testimony-img"
+            />
+            <img
+              src="img/Testimonial-4.PNG"
+              alt="Slide 3"
+              class="testimony-img"
+            />
+            <img
+              src="img/Testimonial-5.png"
+              alt="Slide 3"
+              class="testimony-img"
+            />
+            <img
+              src="img/Testimonial-6.PNG"
+              alt="Slide 3"
+              class="testimony-img"
+            />
+          </div>
+        </div>
+        <div class="slide-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid grid-3-columns">
+        <div class="footer-logo">
+          <img src="img/LBP-logo.jpeg" alt="Business logo" />
+          <br />
+        </div>
+        <div class="footer-contact">
+          <h4>CONTACT</h4>
+          <p>
+            Alengongo Shopping Complex, opposite Revel lounge, before Alao Akala
+            junction, Akobo.
+            <br />
+            lahsehbeautypalour@gmail.com
+            <br />
+            Telephone: +234-9015279816
+            <br />
+            Whatsapp: +234-9033801161
+          </p>
+          <i class="fa-brands fa-facebook"></i> |
+          <i class="fa-brands fa-instagram"></i> |
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="footer-info">
+          <h4>ABOUT US</h4>
+          <ul>
+            <li>
+              <a href=""> Gallery </a>
+            </li>
+            <li>
+              <a href=""> Join the team </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
