@@ -21,68 +21,82 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../src/styles.css" />
-    <!-- Adjusted path -->
-    <title>Service 1 - Lahseh Beauty Parlour</title>
+
+    <title>Tooth Gems - Lahseh Beauty Parlour</title>
   </head>
   <body>
-    <div class="logo">
-      <img src="../img/LBP-logo.jpeg" alt="Business logo" />
-    </div>
     <div class="container">
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="/" title="Homepage"> Home </a>
-          </li>
-          <li>
-            <a href="./nav/services.html" title="Services page"> Services </a>
-          </li>
-          <li>
-            <a href="./nav/product.html" title="Product page"> Products</a>
-          </li>
-          <li>
-            <a href="./nav/gallery.html" title="Gallery page"> Gallery </a>
-          </li>
-          <li>
-            <a href="./nav/contact.html" title="Contact page"> Contact us </a>
-          </li>
-        </ul>
-        <div class="cart-section grid gap-3">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <i class="fa-solid fa-user"></i>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img src="../img/LBP-logo.jpeg" alt="Business logo" />
         </div>
-      </nav>
+        <nav class="navbar">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html" title="Homepage">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../index.html#services"
+                title="Services"
+              >
+                Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../index.html#products"
+                title="Products"
+              >
+                Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gallery.html" title="Gallery">
+                Gallery
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" title="Contact page">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <header>
         <h2>Lahseh Beauty Palour</h2>
         <h6>UNLEASH YOUR INNER GLOW</h6>
-        <button>BOOK NOW</button>
+        <button onclick="location.href='appointment.html'">BOOK NOW</button>
       </header>
     </div>
     <section class="service-section">
-      <h2>LASHES EXTENSION</h2>
+      <h2>TOOTH GEMS</h2>
       <button>Book an appointment</button>
     </section>
-    <div class="grid grid-2-columns">
+    <div class="grid-2-columns">
       <div class="video-section">
-        <video width="600" height="400" controls>
-          <source src="../videos/Lashes-video.mp4" type="video/mp4" />
+        <video width="100%" height="auto" controls>
+          <source src="../videos/Tooth-gems-video.mp4" type="video/mp4" />
         </video>
       </div>
+      <div class="services-price">
+        <h3>SINGLE GEM _______________________ #5,000</h3>
+        <h3>DOUBLE GEMS _____________________ #9,000</h3>
+        <h3>BUTTERFLY DESIGN _________________ #17,000</h3>
+        <h3>FLOWER DESIGN ____________________ #17,000</h3>
+        <h3>TWINKLE DESIGN ___________________ #14,000</h3>
+        <h3>CROSS DESIGN _____________________ #15,000</h3>
+        <h3>WAVEY DESIGN _____________________ #12,000</h3>
+        <h3>CRYSTAL LINES _____________________ #12,000</h3>
+        <h3>FULL TOOTH DESIGN ________________ #20,000</h3>
+        <h3>FAIRY DUST DESIGN _________________ #15,000</h3>
+        <h3>GEMS REMOVAL _____________________ #8,000</h3>
+      </div>
     </div>
-    <span class="services-price">
-      <h3>CLASSIC SET__________________________#10,000</h3>
-      <h3>HYBRID SET___________________________#12,000</h3>
-      <h3>WHISPY HYBRID SET___________________#20,000</h3>
-      <h3>VOLUME SET__________________________#17,000</h3>
-      <h3>WHISPY VOLUME SET__________________#20,000</h3>
-      <h3>MEGA VOLUME SET____________________#25,000</h3>
-      <h3>WHISPY MEGA VOLUME SET_____________#28,000</h3>
-      <h3>CLASSIC SET REFILL____________________#5,000</h3>
-      <h3>HYBRID SET REFILL_____________________#6,000</h3>
-      <h3>VOLUME SET REFILL____________________#9,000</h3>
-      <h3>MEGA VOLUME SET REFILL______________#13,000</h3>
-      <h3>LASH REMOVAL_______________________#4,000</h3>
-    </span>
   </body>
 </html>
