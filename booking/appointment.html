@@ -116,6 +116,184 @@
       </div>
     </div>
 
+    <div class="appointment-dropdown hidden" id="appointment-dropdown">
+      <h4>AVAILABLE APPOINTMENTS ON <span id="selected-date"></span></h4>
+      <ul>
+        <li>
+          09:00 am – 11:00 am<br />
+          <small>10 SPACES AVAILABLE</small><br />
+          <button class="book-btn">Book Appointment</button>
+        </li>
+        <li>
+          11:00 am – 01:00 pm<br />
+          <small>10 SPACES AVAILABLE</small><br />
+          <button class="book-btn">Book Appointment</button>
+        </li>
+        <li>
+          01:00 pm – 03:00 pm<br />
+          <small>10 SPACES AVAILABLE</small><br />
+          <button class="book-btn">Book Appointment</button>
+        </li>
+        <li>
+          03:00 pm – 6:00 pm<br />
+          <small>10 SPACES AVAILABLE</small><br />
+          <button class="book-btn">Book Appointment</button>
+        </li>
+      </ul>
+    </div>
+
+    <div id="booking-form" class="booking-form hidden">
+      <h3>Book Appointment</h3>
+      <button class="cancel-btn" id="cancel-btn">&times;</button>
+      <form id="appointment-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="time-slot">Time Slot:</label>
+        <input type="text" id="time-slot" name="time-slot" readonly />
+
+        <label for="service">Braids</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="knotless-braids">
+            Medium size Knotless Braids (Waist length) - #10,000
+          </option>
+          <option value="knotless-braids">
+            Medium size Knotless Braids (Thigh length) - #15,000
+          </option>
+          <option value="knotless-braids">
+            Small size Knotless Braids (Thigh length) - #20,000
+          </option>
+          <option value="braids">
+            Medium size Traditional Braids (Waist length) - #10,000
+          </option>
+          <option value="braids">
+            Medium size Traditional Braids (Thigh length) - #13,000
+          </option>
+          <option value="braids">Jumbo Braids (Waist length) - #10,000</option>
+          <option value="braids">Jumbo Braids (Thigh length) - #13,000</option>
+          <option value="braids">Feed-in Braids (Waist length)- #10,000</option>
+          <option value="braids">Feed-in Braids (Shuku) - #10,000</option>
+          <option value="braids">Stitch Braids - #10,000</option>
+          <option value="crotchet">Crotchet - #10,000</option>
+          <option value="cornrow">Cornrows - #1,500</option>
+          <option value="hair-wash">Washing and Drying - #1,500</option>
+          <option value="retouching">Retouching - #1,500</option>
+          <option value="steaming">Steaming - #5,000</option>
+        </select>
+
+        <label for="service">Lashes Extension</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="lashes">Classic set - #10,000</option>
+          <option value="lashes">Hybrid set - #12,000</option>
+          <option value="lashes">Whispy Hybrid set - #16,000</option>
+          <option value="lashes">Volume set - #17,000</option>
+          <option value="lashes">Whispy Volume set - #20,000</option>
+          <option value="lashes">Mega Volume set - #25,000</option>
+          <option value="lashes">Whispy Mega Volume set - #30,000</option>
+          <option value="lashes">Classic set - #10,000</option>
+          <option value="lashes">Classic set - #10,000</option>
+          <option value="lashes">Classic set refill - #5,000</option>
+          <option value="lashes">Hybrid set refill - #6,000</option>
+          <option value="lashes">Volume set refill - #9,000</option>
+          <option value="lashes">Mega Volume set refill - #13,000</option>
+          <option value="lashes">Lash removal - #4,000</option>
+        </select>
+
+        <label for="service">SPMU Brows</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="brows">Microblading - #35,000</option>
+          <option value="brows">Microshading - #40,000</option>
+          <option value="brows">Ombre brows - #40,000</option>
+          <option value="brows">Combo brows - #50,000</option>
+          <option value="brows">Microblading touch up - #20,000</option>
+          <option value="brows">Microshading touch up - #25,000</option>
+          <option value="brows">Ombre brows touch up - #25,000</option>
+          <option value="brows">Combo brows touch up - #30,000</option>
+        </select>
+
+        <label for="service">Manicure & Pedicure</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="nails">Acrylic plain short set - #5,000</option>
+          <option value="nails">Acrylic plain medium set - #7,000</option>
+          <option value="nails">Acrylic plain long set - #8,500</option>
+          <option value="nails">Acrylic plain XL set - #10,000</option>
+          <option value="nails">
+            Gel Polish short set (stick-on) - #3,000
+          </option>
+          <option value="nails">
+            Gel Polish medium set (stick-on) - #4,000
+          </option>
+          <option value="nails">Gel Polish long set (stick-on) - #5,000</option>
+          <option value="nails">Gel Polish - #1,500</option>
+          <h5>Designs per finger</h5>
+          <option value="nails">Classic set - #10,000</option>
+          <option value="nails">Toe nails stick on - #2,500</option>
+          <option value="nails">Gel polish on toe nails - #2,000</option>
+          <option value="nails">Regular Pedicure - #4,000</option>
+          <option value="nails">Jelly Pedicure - #5,000</option>
+          <option value="nails">Acrylic soak off - #2,000</option>
+          <option value="nails">Gel soak off - #1,000</option>
+        </select>
+
+        <label for="service">Piercings</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="piercing">Lobe Piercing - #4,000</option>
+          <option value="piercing">Tragus - #5,000</option>
+          <option value="piercing">Helix - #5,000</option>
+          <option value="piercing">Arbital - #6,000</option>
+          <option value="piercing">Transverse lobe - #6,000</option>
+          <option value="piercing">Rook - #6,000</option>
+          <option value="piercing">Forward helix - #5,000</option>
+          <option value="piercing">Auricle - #5,000</option>
+          <h5>Designs per finger</h5>
+          <option value="piercing">Daith - #5,000</option>
+          <option value="piercing">Industrial - #10,500</option>
+          <option value="piercing">Nasal piercing - #5,000</option>
+          <option value="piercing">Septum - #6,000</option>
+          <option value="piercing">Nose bridge - #10,000</option>
+          <option value="piercing">Double Nasal - #9,500</option>
+          <option value="piercing">Tongue piercing - #8,000</option>
+          <option value="piercing">Tongue snake eye - #10,000</option>
+          <option value="piercing">Lip piercing - #7,000</option>
+          <option value="piercing">Brow piercing - #8,000</option>
+          <option value="piercing">Smiley piercing - #6,000</option>
+          <option value="piercing">Navel piercing - #8,000</option>
+          <option value="piercing">Nipple piercing (per one) - #5,000</option>
+        </select>
+
+        <label for="service">Tooth Gems</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="tooth-gems">Single gem - #5,000</option>
+          <option value="tooth-gems">Double gems - #9,000</option>
+          <option value="tooth-gems">Butterfly design - #17,000</option>
+          <option value="tooth-gems">Flower design - #17,000</option>
+          <option value="tooth-gems">Twinkle design - #14,000</option>
+          <option value="tooth-gems">Cross design - #15,000</option>
+          <option value="tooth-gems">Wavey design - #12,000</option>
+          <option value="tooth-gems">Crystal lines - #12,000</option>
+          <option value="tooth-gems">Full tooth design - #20,000</option>
+          <option value="tooth-gems">Fairy dust design - #15,000</option>
+          <option value="tooth-gems">Gems removal - #8,000</option>
+        </select>
+
+        <button type="submit">REQUEST APPOINTMENT</button>
+        <button type="button" class="cancel-btn" id="form-cancel-btn">
+          CANCEL
+        </button>
+      </form>
+    </div>
     <footer>
       <div class="grid grid-3-columns">
         <div class="footer-logo">
