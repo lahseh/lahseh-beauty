@@ -376,7 +376,13 @@ section .icons span:last-child {
 }
 
 .calendar {
+  width: 100%;
   padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .calendar .days {
@@ -433,6 +439,101 @@ section .icons span:last-child {
   background: pink;
 }
 
+/* Appointment dropdown styling */
+.appointment-dropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.appointment-dropdown.hidden {
+  display: none;
+}
+
+.appointment-dropdown h4 {
+  margin-top: 0;
+}
+
+.appointment-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.appointment-dropdown ul li {
+  margin-bottom: 10px;
+}
+
+.appointment-dropdown ul li button {
+  background: #db85a7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Booking Form Styles */
+.booking-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.booking-form.hidden {
+  display: none;
+}
+
+.booking-form h3 {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-form .cancel-btn {
+  cursor: pointer;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: #000;
+  background: #db85a7;
+  padding: 0;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form form label {
+  margin-top: 10px;
+}
+
+.booking-form form input,
+.booking-form form select,
+.booking-form form button {
+  margin-top: 5px;
+}
+
+.booking-form form .cancel-btn {
+  background: #db85a7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Footer styling */
 .footer-logo {
   padding: 0;
   width: 200px;
@@ -443,12 +544,13 @@ section .icons span:last-child {
 
 footer {
   padding: 30px;
-  color: #150d0c;
+  background-color: #150d0c;
+  color: #fff;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 footer a {
-  color: #150d0c;
+  color: #fff;
 }
 
 .footer-info {
